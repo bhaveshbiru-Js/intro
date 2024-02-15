@@ -1,26 +1,17 @@
-  /* Font Family  */
-@font- {
-    font-family:Keshiki';
-    src: urlfont-family/eshiki/Sian-Wy.ttf");}
-  @font-face {  font-family 'sd-asian';
-    src: url("font-family/SD-Asian/Sdasian-WyDon.ttf");
-  }
-  @font-face {
-    font-family: 'Poppins';
-    src: url("font-family/Poppins/Poppins-Medium.ttf");
-  }
-  
-  *,
-  ::before,
-  ::after {
+ /* Font Family  */
+@font-face { font-family: 'Keshiki';  src: url("font-family/Keshiki/Sdasian-WyDon.ttf");  }
+@font-face { font-family: 'sd-asian'; src: url("font-family/SD-Asian/Sdasian-WyDon.ttf"); }
+@font-face { font-family: 'Poppins'; src: url("font-family/Poppins/Poppins-Medium.ttf");}
+
+*, ::before, ::after {
     margin: 0;
     padding: 0;
     transition: .3s;
     box-sizing: border-box;
     color: #fff;
-  }
-  
-  video {
+}
+
+video {
     position: absolute;
     left: 0;
     top: 0;
@@ -30,69 +21,69 @@
     pointer-events: none;
     z-index: -1;
     transition: 1s;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 950px;
     margin: auto;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     padding: 12px 10px;
-  }
-  
-  .navbar .container {
+}
+
+.navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .navbar .logo {
-    font-family: 'sd-asian'
+}
+
+.navbar .logo {
+    font-family: 'sd-asian';
     text-decoration: none;
     font-size: 2rem;
-  }
-  
-  .navbar ul {
+}
+
+.navbar ul {
     list-style-type: none;
     display: flex;
-  }
-  
-  .navbar ul a {
+}
+
+.navbar ul a {
     display: block;
     text-decoration: none;
     margin: 0 10px;
     padding: 8px 16px;
-    font-family: 'Keshiki'
+    font-family: 'Keshiki';
     position: relative;
-  }
-  
-  .navbar ul:has(a:hover) a:not(:hover) {
+}
+
+.navbar ul:has(a:hover) a:not(:hover) {
     filter: blur(10px);
-  }
-  
-  .page-content {
+}
+
+.page-content {
     text-align: center;
     margin-top: 12rem;
     padding: 0 10px;
-  }
-  
-  .page-content .inner-content .heading {
+}
+
+.page-content .inner-content .heading {
     font-size: 16rem;
-    font-family: 'sd-asian'
-  }
-  
-  .page-content .inner-content p {
+    font-family: 'sd-asian';
+}
+
+.page-content .inner-content p {
     font-family: 'Poppins', sans-serif;
-  }
-  
-  .page-content .buttons {
+}
+
+.page-content .buttons {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
-  
-  .page-content .buttons a {
+}
+
+.page-content .buttons a {
     display: block;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -107,17 +98,17 @@
     overflow: hidden;
     z-index: 1;
     border: 1px solid #ffffff1e;
-  }
-  
-  .page-content .buttons a.active {
+}
+
+.page-content .buttons a.active {
     background-color: #e1340d;
-  }
-  
-  .page-content .buttons a.active:hover {
+}
+
+.page-content .buttons a.active:hover {
     box-shadow: 0 0 40px rgb(253, 2, 2);
-  }
-  
-  .page-content .buttons a:nth-child(2)::before {
+}
+
+.page-content .buttons a:nth-child(2)::before {
     content: '';
     position: absolute;
     left: -100%;
@@ -126,25 +117,25 @@
     height: 100%;
     background: linear-gradient(40deg, #ffffff00, #ffffff20, #ffffff00);
     z-index: -1;
-  }
-  
-  .page-content .buttons a:nth-child(2):hover::before {
+}
+
+.page-content .buttons a:nth-child(2):hover::before { 
     left: 100%;
-  }
-  
-  .page-content .buttons a:nth-child(2):hover {
+}
+
+.page-content .buttons a:nth-child(2):hover {
     transition-delay: .3s;
     box-shadow: 0 0 40px rgb(238, 5, 5);
     background-color: #ff310c;
-  }
-  
-  .page-content .social-links {
+}
+
+.page-content .social-links {
     margin-top: 6rem;
     display: flex;
     justify-content: center;
-  }
-  
-  .page-content .social-links a {
+}
+
+.page-content .social-links a {
     display: block;
     height: 40px;
     width: 40px;
@@ -159,9 +150,9 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
-  }
-  
-  .page-content .social-links a::after {
+}
+
+.page-content .social-links a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -170,19 +161,14 @@
     height: 0%;
     background: #f15405;
     z-index: -1;
-  }
-  
-  .page-content .social-links a:hover::after {
+}
+
+.page-content .social-links a:hover::after { 
     height: 100%;
-  }
-  
-  span {
+}
+
+span{
     color: orange;
-  }
-  
-  /* Media Queries */
-  @media screen and (max-width: 768px) {
-    .page-content .inner-content .heading {
-      font-size: 8rem;
-    }
-  }
+}
+ 
+ 
