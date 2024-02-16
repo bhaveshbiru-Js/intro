@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact me</title>
+
+</head>
+<body>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        .contact__conatiner{
+  padding-top: 1rem;
+}
+.contact__form,
+.contact__group{
+  display: grid;
+  row-gap: 1rem;
+}
+.contact__form{
+  position: relative;
+}
+.contact__input{
+  padding: 1rem 1.25rem;
+  border-radius:.5rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+.conatct__input::placeholder{
+  color:var(--text-color);
+}
+.contact__form textarea{
+  height: 11rem;
+  resize: none;
+  margin-bottom: 2rem;;
+}
+.contact__button{
+  justify-self: center;
+  cursor: pointer;
+}
+.contact__button:hover{
+  box-shadow: 0 8px 24px hsla(var(--hue),100% 40%, .25);
+}
+.contact__message{
+  position: absolute;
+  left:0;
+  bottom: 4.5rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+
+    </style>
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+        <h3 class="section__subtitle">
+            Get In<span> Touch</span>
+        </h3>
+        <h2 class="section__title">
+contact Me
+        </h2>
+        <div class="conatct__container container grid">
+            <form action="" class="contact__form" id="contact-form">
+                <div class="contact__group">
+                    <input type="text" name="user_name" required placeholder="Enter your name"  class="contact__input"><br>
+                    <input type="email" name="user_email" required placeholder="Enter your email"  class="contact__input"><br>
+                </div>
+                <textarea name="user_project" required placeholder="Enter your message"  class="contact__input"></textarea>
+                <p class="contact__message" id="contact-message"></p>
+                <button type="submit"  class="button conatct__button">
+                    Send Message
+                </button>
+            </form>
+        </div>
+     </section>
+  </main>
+
+</body>
+</html>
